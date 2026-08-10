@@ -1,0 +1,13 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "AzureWebJobsStorage": "",
+    "SQL_SERVER": "cls-sql.database.windows.net",
+    "SQL_DATABASE": "cls",
+    "SQL_USER": "cls_app",
+    "SQL_PASSWORD": "put-it-here-locally-only",
+    "AUTH_DISABLED": "true"
+  },
+  "Host": { "CORS": "*" }
+}
