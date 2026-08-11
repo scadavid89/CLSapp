@@ -11,20 +11,6 @@
     ".css": "text/css",
     ".json": "application/json"
   },
-  "routes": [
-    { "route": "/api/reports/*", "allowedRoles": ["ops", "finance", "admin"] },
-    { "route": "/api/products/*", "allowedRoles": ["ops", "admin"] },
-    { "route": "/api/assets/*", "allowedRoles": ["ops", "admin"] },
-    { "route": "/api/stock", "allowedRoles": ["ops", "admin"] },
-    { "route": "/api/scan/*", "allowedRoles": ["yard", "dispatch", "ops", "admin"] },
-    { "route": "/api/quotes/*", "allowedRoles": ["dispatch", "ops", "finance", "admin"] },
-    { "route": "/api/*", "allowedRoles": ["yard", "dispatch", "ops", "finance", "admin", "customer"] },
-    { "route": "/*", "allowedRoles": ["yard", "dispatch", "ops", "finance", "admin", "customer"] }
-  ],
-  "responseOverrides": {
-    "401": { "statusCode": 302, "redirect": "/.auth/login/aad" },
-    "403": { "statusCode": 302, "redirect": "/.auth/login/aad" }
-  },
   "globalHeaders": {
     "X-Content-Type-Options": "nosniff",
     "X-Frame-Options": "DENY",
